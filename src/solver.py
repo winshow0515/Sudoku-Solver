@@ -2,7 +2,7 @@ from typing import List
 class Solution:
     def __init__(self):
         self.cnt = 0
-    def getPossibilities(self, board, x, y):
+    def getPossibilities(self, board, x, y):#回傳board[x][y]能放的數字
         possibles = set("123456789")
         for i in range(9):
             possibles.discard(board[i][y])
@@ -27,21 +27,3 @@ class Solution:
                 return True
             board[x][y] = '.'
         return False
-
-# doulbe under - dunder
-if __name__ == "__main__":
-
-    fout = open("tmp.txt", "w")
-    fout.write("HI")
-    fout.close()
-
-    fin = open("tmp.txt", "r")
-    s = fin.read()
-    print(s)
-    fin.close()
-
-    with open("tmp.txt", "w") as fout:
-        fout.write("HI")
-
-    with open("tmp.txt", "r") as fin:
-        print(fin.read())

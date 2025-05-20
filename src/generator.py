@@ -31,4 +31,4 @@ if __name__ == "__main__":
         with open("../testcases/" + str(idx) + ".in", "w") as fout:
             board = sudoku_generator(hole)
             for row in board:
-                print("".join(row), file=fout)
+                print("".join(row), file=fout)#寫入檔案的方法(內容,檔案)
